@@ -1,0 +1,21 @@
+--- a/CMakeLists.txt	2024-03-27 17:47:47.065052145 +0000
++++ b/CMakeLists.txt	2024-03-27 17:48:31.203780798 +0000
+@@ -63,7 +63,8 @@
+ set(gz_config_install_dir "${CMAKE_INSTALL_DATAROOTDIR}/cmake/${PROJECT_NAME_LOWER}")
+ set(gz_pkgconfig_input "${CMAKE_CURRENT_SOURCE_DIR}/config/gz-cmake.pc.in")
+ set(gz_pkgconfig_output "${CMAKE_BINARY_DIR}/${PROJECT_NAME}.pc")
+-set(gz_pkgconfig_install_dir "${CMAKE_INSTALL_FULL_LIBDIR}/pkgconfig")
++set(gz_pkgconfig_install_dir "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
++set(gz_pkgconfig_abs_install_dir "${CMAKE_INSTALL_FULL_LIBDIR}/pkgconfig")
+ set(gz_utilities_target ${PROJECT_EXPORT_NAME}-utilities)
+ set(gz_utilities_import_target_name ${PROJECT_EXPORT_NAME}::${gz_utilities_target})
+ set(gz_utilities_target_output_filename "${gz_utilities_target}-targets.cmake")
+@@ -96,7 +97,7 @@
+ # Configure and install the pkgconfig file (needed for utilities headers)
+ file(RELATIVE_PATH
+   GZ_PC_CONFIG_RELATIVE_PATH_TO_PREFIX
+-  "${gz_pkgconfig_install_dir}"
++  "${gz_pkgconfig_abs_install_dir}"
+   "${CMAKE_INSTALL_PREFIX}"
+ )
+ 
