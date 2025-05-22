@@ -2,8 +2,8 @@
 Changelog for package gz_cmake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.10 (2025-05-22)
+-------------------
 * Merge pull request `#14 <https://github.com/gazebo-release/gz_cmake_vendor/issues/14>`_ from gazebo-release/releasepy/jazzy/3.5.5
 * Contributors: Jose Luis Rivero, Steve Peters
 
