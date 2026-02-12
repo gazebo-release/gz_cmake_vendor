@@ -2,8 +2,8 @@
 Changelog for package gz_cmake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.3 (2026-02-12)
+------------------
 * Bump version to 4.2.1 (`#21 <https://github.com/gazebo-release/gz_cmake_vendor/issues/21>`_)
 * Contributors: Addisu Z. Taddese
 
