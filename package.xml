@@ -12,7 +12,7 @@
   -->
   <version>0.0.11</version>
   <description>
-    Vendor package for: gz-cmake3 3.5.6
+    Vendor package for: gz-cmake3 3.6.0
 
     Gazebo CMake : CMake Modules for Gazebo Projects
   </description>
