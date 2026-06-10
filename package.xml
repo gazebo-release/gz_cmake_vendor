@@ -12,7 +12,7 @@
   -->
   <version>0.5.0</version>
   <description>
-    Vendor package for: gz-cmake 5.1.0
+    Vendor package for: gz-cmake 5.1.1
 
     Gazebo CMake : CMake Modules for Gazebo Projects
   </description>
