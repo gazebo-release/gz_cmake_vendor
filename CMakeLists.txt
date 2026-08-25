@@ -29,18 +29,20 @@ endif()
 
 # TEMP -- CI experiment, do not merge.
 #
-# Build gz-cmake from the branch that uses /Z7 rather than /Zi, so that the
-# gz packages can be compiled through a compiler cache on Windows.  /Zi routes
-# every object's debug information through one shared program database, which
-# sccache cannot front: it fails with C1041 even with /FS, and declines to
-# cache the compilation in any case.
+# Build gz-cmake from the branch that stops hardcoding /Zi and leaves the MSVC
+# debug information format to CMake, so that the gz packages can be compiled
+# through a compiler cache on Windows.  /Zi routes every object's debug
+# information through one shared program database, which sccache cannot front:
+# it fails with C1041 even with /FS, and declines to cache the compilation in
+# any case.  In Release it also bought nothing, since CMake links Release
+# without /DEBUG and the information was discarded.
 #
-# See gazebosim/gz-cmake branch mjcarroll/z7-instead-of-zi.  Not set through
+# See gazebosim/gz-cmake branch mjcarroll/no-hardcoded-msvc-debug-format.  Not set through
 # VENDOR_FROM_LIB_VCS_REF/LIB_VCS_REF above because those names are shared by
 # every gz *_vendor package, so setting them on the colcon command line would
 # send gz_math_vendor and gz_utils_vendor looking for the same branch in their
 # own repositories.
-set(LIB_VCS_VER mjcarroll/z7-instead-of-zi)
+set(LIB_VCS_VER mjcarroll/no-hardcoded-msvc-debug-format)
 
 find_package(ament_cmake_core REQUIRED)
 find_package(ament_cmake_vendor_package REQUIRED)
