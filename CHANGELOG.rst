@@ -2,8 +2,8 @@
 Changelog for package gz_cmake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.2 (2026-08-25)
+------------------
 * Upgrade to Rotary prerelease (`#29 <https://github.com/gazebo-release/gz_cmake_vendor/issues/29>`_)
 * Contributors: Addisu Z. Taddese
 
