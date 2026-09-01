@@ -2,8 +2,8 @@
 Changelog for package gz_cmake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.5 (2026-08-31)
+------------------
 * Enable Python bindings (`#30 <https://github.com/gazebo-release/gz_cmake_vendor/issues/30>`_)
   * Enable python bindings
   * Add missing file
